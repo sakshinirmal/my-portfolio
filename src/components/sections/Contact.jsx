@@ -104,8 +104,8 @@ export const Contact = () => {
           
           <div className="mt-8 text-center">
             <div className="flex justify-center space-x-6">
-              <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">LinkedIn</a>
-              <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:underline">GitHub</a>
+              <a href="https://www.linkedin.com/in/sakshinirmal" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">LinkedIn</a>
+              <a href="https://github.com/sakshinirmal" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:underline">GitHub</a>
             </div>
           </div>
         </div>
