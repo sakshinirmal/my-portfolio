@@ -1,141 +1,149 @@
-import { RevealOnScroll } from "../RevealOnScroll";
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { 
+  faCode, 
+  faLightbulb, 
+  faRocket, 
+  faUsers,
+  faArrowRight
+} from "@fortawesome/free-solid-svg-icons";
+
+// Import profile photo
+import profilePhoto from "../../assets/profilephoto.jpg";
 
 export const About = () => {
-  const frontendSkills = [
-    "React.js",
-    "C++",
-    "JavaScript",
-    "TypeScript",
-    "GraphQL",
-    "RESTful APIs",
-    "Express.js",
-    "Node.js",
-    "MongoDB",
-    "Authentication",
-    "Docker",
-    "AWS",
-    "Firebase",
-    "Git",
-    "Next.js",
-    "Angular.js",
-    "HTML5",
-    "Tailwind CSS",
+  const highlights = [
+    {
+      icon: faCode,
+      title: "Full Stack Developer",
+      description: "Passionate about creating seamless web applications with modern technologies",
+    },
+    {
+      icon: faLightbulb,
+      title: "Problem Solver",
+      description: "Love tackling complex challenges and finding innovative solutions",
+    },
+    {
+      icon: faRocket,
+      title: "Fast Learner",
+      description: "Quick to adapt and master new technologies and frameworks",
+    },
+    {
+      icon: faUsers,
+      title: "Team Player",
+      description: "Excellent communicator and collaborative team member",
+    },
   ];
 
-  // const backendSkills = ["Node.js", "Express.js", "AWS", "MongoDB", "GraphQL", "Authentication"];
-
   return (
-    <section
-      id="about"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
-      <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-pink-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
-            About Me
-          </h2>
+    <section id="about" className="py-20 relative">
+      <div className="max-w-7xl mx-auto px-4">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-4xl md:text-5xl font-bold text-center mb-16 relative"
+        >
+          <span className="gradient-text">About Me</span>
+          <motion.span
+            className="absolute -inset-x-6 -inset-y-4 bg-gradient-to-r from-[var(--primary)]/5 to-[var(--secondary)]/5 blur-2xl rounded-2xl"
+            animate={{ opacity: [0.3, 0.5, 0.3] }}
+            transition={{ duration: 4, repeat: Infinity }}
+          />
+        </motion.h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
-              Hi! I'm Sakshi Nirmal, a passionate Full Stack Developer with
-              experience in building scalable web applications using React,
-              Node.js, and MongoDB. I've worked with startups and teams to
-              develop seamless digital solutions, enhancing user experiences and
-              optimizing workflows. Whether it's crafting interactive UIs,
-              securing APIs, or streamlining development processes, I bring
-              technical expertise and a problem-solving mindset to every
-              project. Let’s build something amazing together!{" "}
-            </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Profile Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div className="relative rounded-2xl overflow-hidden border-2 border-[var(--surface)] shadow-lg">
+              <img
+                src={profilePhoto}
+                alt="Sakshi Nirmal"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
 
-            <div className="flex">
-              <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Skills</h3>
-                <div className="flex flex-wrap gap-2">
-                  {frontendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-pink-500/10 cursor-pointer text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-pink-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
-                    "
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+          {/* About Content */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <div className="glass-effect rounded-xl p-6 md:p-8">
+              <h3 className="text-2xl font-semibold mb-4 gradient-text">
+                Hello, I'm Sakshi!
+              </h3>
+              <div className="space-y-4 text-[var(--text-secondary)]">
+                <p>
+                  I'm a passionate Full Stack Developer based in Pune, India, with a strong
+                  foundation in modern web technologies and a keen eye for creating
+                  beautiful, functional applications.
+                </p>
+                <p>
+                  With expertise in both frontend and backend development, I specialize in
+                  building scalable web applications using React, Node.js, and various
+                  modern frameworks.
+                </p>
+                <p>
+                  I'm constantly learning and exploring new technologies to stay at the
+                  forefront of web development.
+                </p>
               </div>
 
-              {/* <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
-                <h3 className="text-xl font-bold mb-4"> Backend</h3>
-                <div className="flex flex-wrap gap-2">
-                  {backendSkills.map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-pink-500/10 cursor-pointer text-pink-500 py-1 px-3 rounded-full text-sm hover:bg-pink-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
-                    "
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div> */}
+              <motion.a
+                href="#contact"
+                whileHover={{ x: 5 }}
+                className="inline-flex items-center gap-2 text-[var(--secondary)] mt-6 group"
+              >
+                Let's work together
+                <FontAwesomeIcon 
+                  icon={faArrowRight} 
+                  className="transition-transform group-hover:translate-x-1"
+                />
+              </motion.a>
             </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li>
-                  <strong>B.Tech in Computer Science </strong>
-                  <p>{" "}(2020-2024)</p>
-                  <p>
-                  St. Vincent Pallotti College of Engineering and Technology,
-                  Nagpur 
-                  </p>
-                </li>
-                <li>
-                  <strong>Relevant Coursework:</strong>
-                  <ul className="list-disc list-inside ml-5 space-y-1">
-                    <li>Data Structures</li>
-                    <li>Web Development</li>
-                    <li>Deep Learning</li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 💼 Work Experience </h3>
-              <div className="space-y-4 text-gray-300">
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Jr. Full Stack Developer at Tenet K D Platform (May 2024 -
-                    Present){" "}
-                  </h4>
-                  <p>
-                    Built an IoT-powered smart home automation web service with
-                    React, Node.js, and MongoDB for seamless control and
-                    connectivity.
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="font-semibold">
-                    {" "}
-                    Intern at IgnAite,New Jersey, US (Jan 2024 - April 2024){" "}
-                  </h4>
-                  <p>
-                    Leading frontend development of SPI app using React.js,
-                    focusing on UI/UX, authentication, and investor engagement.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          </motion.div>
         </div>
-      </RevealOnScroll>
+
+        {/* Highlights */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+          {highlights.map((highlight, index) => (
+            <motion.div
+              key={highlight.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true }}
+              className="glass-effect rounded-xl p-6 hover-lift"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <div className="w-12 h-12 rounded-lg glass-effect flex items-center justify-center">
+                  <FontAwesomeIcon
+                    icon={highlight.icon}
+                    className="text-[var(--secondary)] text-2xl glow-subtle"
+                  />
+                </div>
+                <h3 className="text-lg font-semibold gradient-text">
+                  {highlight.title}
+                </h3>
+              </div>
+              <p className="text-[var(--text-secondary)]">
+                {highlight.description}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

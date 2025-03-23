@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: #7928CA;
+  --secondary: #FF0080;
+  --accent: #00DFD8;
+  --background: #0A0118;
+  --surface: #1A1125;
+  --text: #E2E8F0;
+  --text-secondary: #A0AEC0;
+}
+
+.font-cyberpunk {
+  font-family: 'Space Grotesk', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.text-shadow-subtle {
+  text-shadow: 0 0 20px rgba(121, 40, 202, 0.3),
+               0 0 40px rgba(255, 0, 128, 0.2);
+}
+
+.glow-subtle {
+  filter: drop-shadow(0 0 8px rgba(121, 40, 202, 0.2))
+         drop-shadow(0 0 16px rgba(255, 0, 128, 0.1));
+}
+
+.cyberpunk-grid {
+  background: linear-gradient(to bottom, 
+              rgba(121, 40, 202, 0.03) 1px,
+              transparent 1px),
+              linear-gradient(to right, 
+              rgba(121, 40, 202, 0.03) 1px,
+              transparent 1px);
+  background-size: 40px 40px;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.subtle-border {
+  position: relative;
+}
+
+.subtle-border::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, 
+    rgba(121, 40, 202, 0.5),
+    rgba(255, 0, 128, 0.5)
+  );
+  mask: linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.subtle-border:hover::after {
+  opacity: 1;
+}
+
+@keyframes subtle-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-animation {
+  animation: subtle-float 4s ease-in-out infinite;
+}
+
+.glass-effect {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.01)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hover-lift {
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px -2px rgba(121, 40, 202, 0.15);
+}
+
+/* Refined service card styles */
+.service-card {
+  background: linear-gradient(
+    135deg,
+    rgba(26, 17, 37, 0.95),
+    rgba(10, 1, 24, 0.95)
+  );
+  border: 1px solid rgba(121, 40, 202, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(121, 40, 202, 0.3);
+  box-shadow: 0 8px 30px rgba(121, 40, 202, 0.1);
+}
+
+/* Subtle animation for text elements */
+@keyframes subtle-pulse {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.pulse-animation {
+  animation: subtle-pulse 3s ease-in-out infinite;
+} 
