@@ -30,25 +30,21 @@ export const Home = () => {
       icon: faCode,
       title: "Web Development",
       description: "Custom websites & web applications built with modern tech stack",
-      price: "Starting at $100",
     },
     {
       icon: faPalette,
       title: "UI/UX Design",
       description: "Intuitive and engaging user interfaces with punk aesthetics",
-      price: "Starting at $80",
     },
     {
       icon: faMobileScreen,
       title: "Responsive Design",
       description: "Mobile-first approach for seamless experience across devices",
-      price: "Starting at $110",
     },
     {
       icon: faRocket,
       title: "Performance Optimization",
       description: "Speed up your existing applications for better user experience",
-      price: "Starting at $90",
     },
   ];
 
@@ -122,7 +118,7 @@ export const Home = () => {
             className="text-xl md:text-2xl mb-12 text-[var(--text-secondary)] font-light relative overflow-hidden"
           >
             <span className="text-shadow-subtle">
-               Full-Stack Developer · UI Designer · Freelancer
+               Freelance Full-Stack Developer & AI/ML Engineer
             </span>
           </motion.p>
 
@@ -188,9 +184,6 @@ export const Home = () => {
                 </h3>
                 <p className="text-[var(--text-secondary)] mb-4 text-sm">
                   {service.description}
-                </p>
-                <p className="gradient-text font-medium">
-                  {service.price}
                 </p>
               </motion.div>
             ))}

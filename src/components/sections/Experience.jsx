@@ -17,6 +17,22 @@ import {
 export const Experience = () => {
   const experiences = [
     {
+      title: "Jr. Web Developer",
+      company: "Sri Sathya Sai Premamrutha Prakashana",
+      location: "India",
+      duration: "May 25 - Present",
+      type: "Full-time",
+      description: "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone with Google Drive API integration.",
+      achievements: [
+        "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone",
+        "Integrated Google Drive API to automate retrieval and organization of photo collections, reducing manual effort by 80%",
+        "Optimized backend architecture for real-time search (under 2 second), scalability, and secure access for members"
+      ],
+      technologies: ["Python", "FaceNet", "Pinecone", "Google Drive API", "Face Recognition", "Image Processing"],
+      icon: faCode,
+      color: "#FF9800"
+    },
+    {
       title: "Jr. Full Stack Developer",
       company: "Tenet KD Platform pvt ltd",
       location: "Pune, India",
