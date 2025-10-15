@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 // Import profile photo
-import profilePhoto from "../../assets/photo.jpg";
+import profilePhoto from "../../assets/profilephoto.jpg";
 
 export const About = () => {
   const highlights = [
