@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { 
-  faBriefcase, 
-  faCalendar, 
+import {
+  faBriefcase,
+  faCalendar,
   faMapMarkerAlt,
   faCode,
   faUsers,
@@ -17,52 +17,88 @@ import {
 export const Experience = () => {
   const experiences = [
     {
-      title: "Jr. Web Developer",
-      company: "Sri Sathya Sai Premamrutha Prakashana",
+      title: "DevOps Engineer",
+      company: "NMF News",
       location: "India",
-      duration: "May 25 - Present",
+      duration: "Mar 2025 - Present",
       type: "Full-time",
-      description: "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone with Google Drive API integration.",
+      description:
+        "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone with Google Drive API integration.",
       achievements: [
-        "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone",
-        "Integrated Google Drive API to automate retrieval and organization of photo collections, reducing manual effort by 80%",
-        "Optimized backend architecture for real-time search (under 2 second), scalability, and secure access for members"
+        "Developed a face recognition-based image retrieval portal using Python, FaceNet, and Pinecone with Google Drive API integration.",
+        "Designed and implemented CI/CD pipelines using GitHub Actions to automate build, test, and deployment workflows.",
+        "Containerized applications with Docker and managed deployments via Kubernetes, improving scalability and uptime.",
+        "Automated infrastructure provisioning using Terraform and managed configurations with Ansible.",
+        "Deployed and maintained AWS EC2, S3, and EKS clusters, reducing deployment time by 60%.",
+        "Set up Prometheus and Grafana for monitoring, alerting, and performance insights.",
+        " Collaborated across teams to improve release reliability and system automation.",
       ],
-      technologies: ["Python", "FaceNet", "Pinecone", "Google Drive API", "Face Recognition", "Image Processing"],
+      technologies: [
+        "Python",
+        "Docker",
+        "AWS",
+        "Pinecone",
+        "Google Drive API",
+        "Face Recognition",
+        "Image Processing",
+        "Kubernetes",
+        "Docker",
+        "GitHub Actions",
+        "Terraform",
+        "Ansible",
+        "Prometheus",
+        "Grafana",
+      ],
       icon: faCode,
-      color: "#FF9800"
+      color: "#FF9800",
     },
     {
       title: "Jr. Full Stack Developer",
       company: "Tenet KD Platform pvt ltd",
       location: "Pune, India",
-      duration: "May 2024 - Feb 2025",
+      duration: "May 2024 - Mar 2025",
       type: "Full-time",
-      description: "Developed and maintained interactive React.js, Node.js, Tailwind applications with a focus on component-based architecture.",
+      description:
+        "Developed and maintained interactive React.js, Node.js, Tailwind applications with a focus on component-based architecture.",
       achievements: [
         "Implemented REST APIs and GraphQL to enhance data fetching efficiency",
         "Deployed applications in Docker and Kubernetes environments",
-        "Designed reusable React components with a focus on modularity and scalability"
+        "Designed reusable React components with a focus on modularity and scalability",
       ],
-      technologies: ["React.js", "Node.js", "Tailwind CSS", "GraphQL", "Docker", "Kubernetes"],
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Tailwind CSS",
+        "GraphQL",
+        "Docker",
+        "Kubernetes",
+      ],
       icon: faLaptopCode,
-      color: "#4CAF50"
+      color: "#4CAF50",
     },
     {
       title: "Sr. Application Developer Intern",
       company: "IgnAite",
       location: "New Jersey, US (Remote)",
-      duration: "Jan 2024 - May 2024",
+      duration: "Jan 2024 - Apr 2024",
       type: "Internship",
-      description: "Led the frontend team to build React.js-based web applications with scalable UI architecture.",
+      description:
+        "Led the frontend team to build React.js-based web applications with scalable UI architecture.",
       achievements: [
         "Developed component-based designs, ensuring high performance and accessibility",
         "Implemented Redux for state management, reducing API calls by 30%",
-        "Collaborated with cross-functional teams to deliver high-quality web applications"
+        "Collaborated with cross-functional teams to deliver high-quality web applications",
       ],
-      technologies: ["React.js", "Redux", "JavaScript", "HTML5", "CSS3", "RESTful APIs"],
+      technologies: [
+        "React.js",
+        "Redux",
+        "JavaScript",
+        "HTML5",
+        "CSS3",
+        "RESTful APIs",
+      ],
       icon: faServer,
-      color: "#2196F3"
+      color: "#2196F3",
     },
     {
       title: "Full Stack Developer Intern",
@@ -70,15 +106,22 @@ export const Experience = () => {
       location: "India",
       duration: "July 2023 - Aug 2023",
       type: "Internship",
-      description: "Designed a React-based admission portal with a focus on UI/UX and responsive design.",
+      description:
+        "Designed a React-based admission portal with a focus on UI/UX and responsive design.",
       achievements: [
         "Increased user engagement by 20% by optimizing frontend interactions",
         "Implemented responsive design principles for cross-device compatibility",
-        "Collaborated with UI/UX team to enhance user experience"
+        "Collaborated with UI/UX team to enhance user experience",
       ],
-      technologies: ["React", "JavaScript", "HTML/CSS", "Responsive Design", "UI/UX"],
+      technologies: [
+        "React",
+        "JavaScript",
+        "HTML/CSS",
+        "Responsive Design",
+        "UI/UX",
+      ],
       icon: faMobileAlt,
-      color: "#9C27B0"
+      color: "#9C27B0",
     },
     {
       title: "Content & Social Media Lead",
@@ -86,17 +129,23 @@ export const Experience = () => {
       location: "College Chapter",
       duration: "Aug 2022 - Dec 2022",
       type: "Leadership Role",
-      description: "Curated content, managed platforms, and executed impactful campaigns, resulting in growth.",
+      description:
+        "Curated content, managed platforms, and executed impactful campaigns, resulting in growth.",
       achievements: [
-        "Directed the \"Composed Camp\" Android development workshop",
+        'Directed the "Composed Camp" Android development workshop',
         "Achieved a turnout of over 100 participants",
         "Created engaging technical content for social media platforms",
-        "Collaborated with team members to organize tech events"
+        "Collaborated with team members to organize tech events",
       ],
-      technologies: ["Content Creation", "Social Media Management", "Event Organization", "Android Development"],
+      technologies: [
+        "Content Creation",
+        "Social Media Management",
+        "Event Organization",
+        "Android Development",
+      ],
       icon: faGlobe,
-      color: "#FF5722"
-    }
+      color: "#FF5722",
+    },
   ];
 
   return (
@@ -132,17 +181,17 @@ export const Experience = () => {
                 className="relative pl-16"
               >
                 {/* Timeline dot */}
-                <div 
+                <div
                   className="absolute left-7 -translate-x-1/2 w-3 h-3 rounded-full"
                   style={{ backgroundColor: experience.color }}
                 />
-                
+
                 <motion.div
                   whileHover={{ y: -5 }}
                   className="glass-effect rounded-xl p-6 md:p-8 hover-lift"
                 >
                   <div className="flex flex-wrap items-start gap-4 mb-6">
-                    <div 
+                    <div
                       className="w-12 h-12 rounded-xl glass-effect flex items-center justify-center"
                       style={{ color: experience.color }}
                     >
@@ -153,7 +202,9 @@ export const Experience = () => {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-2xl font-semibold mb-2">
-                        <span className="gradient-text">{experience.title}</span>
+                        <span className="gradient-text">
+                          {experience.title}
+                        </span>
                       </h3>
                       <div className="flex flex-wrap gap-4 text-[var(--text-secondary)] text-sm">
                         <span className="flex items-center gap-2">
@@ -178,8 +229,8 @@ export const Experience = () => {
 
                   <div className="space-y-4">
                     <h4 className="text-lg font-semibold text-[var(--text)] flex items-center gap-2">
-                      <FontAwesomeIcon 
-                        icon={faTasks} 
+                      <FontAwesomeIcon
+                        icon={faTasks}
                         style={{ color: experience.color }}
                       />
                       Key Achievements
@@ -190,11 +241,11 @@ export const Experience = () => {
                           key={i}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ delay: (index * 0.2) + (i * 0.1) }}
+                          transition={{ delay: index * 0.2 + i * 0.1 }}
                           viewport={{ once: true }}
                           className="flex items-center gap-2 text-[var(--text-secondary)]"
                         >
-                          <span 
+                          <span
                             className="w-1.5 h-1.5 rounded-full"
                             style={{ backgroundColor: experience.color }}
                           />
@@ -223,4 +274,4 @@ export const Experience = () => {
       </div>
     </section>
   );
-} 
+};
