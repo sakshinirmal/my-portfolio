@@ -17,7 +17,7 @@ import {
 export const Experience = () => {
   const experiences = [
     {
-      title: "DevOps Engineer",
+      title: "Full Stack Developer",
       company: "NMF News",
       location: "India",
       duration: "Mar 2025 - Present",
@@ -25,13 +25,10 @@ export const Experience = () => {
       description:
         "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone with Google Drive API integration.",
       achievements: [
-        "Developed a face recognition-based image retrieval portal using Python, FaceNet, and Pinecone with Google Drive API integration.",
-        "Designed and implemented CI/CD pipelines using GitHub Actions to automate build, test, and deployment workflows.",
-        "Containerized applications with Docker and managed deployments via Kubernetes, improving scalability and uptime.",
-        "Automated infrastructure provisioning using Terraform and managed configurations with Ansible.",
-        "Deployed and maintained AWS EC2, S3, and EKS clusters, reducing deployment time by 60%.",
-        "Set up Prometheus and Grafana for monitoring, alerting, and performance insights.",
-        " Collaborated across teams to improve release reliability and system automation.",
+        "Developed scalable full-stack news applications using Java (Spring Boot) and MERN stack.",
+        "Built CI/CD pipelines with GitHub Actions and automated deployments using Docker & Kubernetes.",
+        "Managed AWS EC2, S3 & EKS, reducing deployment time by 60% for live news delivery.",
+        "Collaborated across editorial & media teams to enhance release speed and platform reliability.",
       ],
       technologies: [
         "Python",
