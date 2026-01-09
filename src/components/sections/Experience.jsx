@@ -20,7 +20,7 @@ export const Experience = () => {
       title: "Full Stack Developer",
       company: "NMF News",
       location: "India",
-      duration: "Mar 2025 - Present",
+      duration: "May 2025 - Nov 2025",
       type: "Full-time",
       description:
         "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone with Google Drive API integration.",
@@ -48,30 +48,6 @@ export const Experience = () => {
       ],
       icon: faCode,
       color: "#FF9800",
-    },
-    {
-      title: "Jr. Full Stack Developer",
-      company: "Tenet KD Platform pvt ltd",
-      location: "Pune, India",
-      duration: "May 2024 - Mar 2025",
-      type: "Full-time",
-      description:
-        "Developed and maintained interactive React.js, Node.js, Tailwind applications with a focus on component-based architecture.",
-      achievements: [
-        "Implemented REST APIs and GraphQL to enhance data fetching efficiency",
-        "Deployed applications in Docker and Kubernetes environments",
-        "Designed reusable React components with a focus on modularity and scalability",
-      ],
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Tailwind CSS",
-        "GraphQL",
-        "Docker",
-        "Kubernetes",
-      ],
-      icon: faLaptopCode,
-      color: "#4CAF50",
     },
     {
       title: "Sr. Application Developer Intern",
