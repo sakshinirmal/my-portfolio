@@ -20,7 +20,7 @@ export const Experience = () => {
       title: "Full Stack Developer",
       company: "NMF News",
       location: "India",
-      duration: "May 2025 - Nov 2025",
+      duration: "May 2024 - Nov 2025",
       type: "Full-time",
       description:
         "Developed a face recognition-based image retrieval portal using Python, FaceNet and Pinecone with Google Drive API integration.",
