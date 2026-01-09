@@ -18,7 +18,7 @@ export const Experience = () => {
   const experiences = [
     {
       title: "Full Stack Developer",
-      company: "NMF News",
+      company: "Khetan Media Creation Pvt. Ltd.",
       location: "India",
       duration: "May 2024 - Nov 2025",
       type: "Full-time",
